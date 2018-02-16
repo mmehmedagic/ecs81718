@@ -21,11 +21,23 @@ a {
     margin: 10px;
 }
         
-.center-align {
-    text-align: center;
-}
-        
 .padding-fix-list {
     padding-left: 460px;
     padding-right: 500px;
+}
+
+#top {
+    text-align: center;
+}
+
+#introduction {
+    background-color: White;
+}
+
+#test {
+    background-color: MediumSeaGreen;
+}
+
+#test2 {
+    background-color: Tomato;
 }
