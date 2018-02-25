@@ -14,6 +14,10 @@
         .image-fix {
             width: 400px;
         }
+        
+        .image-fix-2 {
+            width: 1000px;
+        }
 
         .font-fix {
             font-size: 20px;
@@ -39,34 +43,80 @@
 
         body {
             font-family: 'Oxygen';
+            position: relative;
+        }
+
+        .nav li {
+            float: left;
         }
     </style>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </head>
 
-<body class="bg-dark center-align">
-    <br>
+<body class="bg-dark center-align" data-spy="scroll" data-target="#scrollspy">
     <div>
-        <div class="col text-light">
+        <nav class="navbar navbar-expand-xl bg-dark navbar-dark fixed-top" id="scrollspy">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#buttons">Good Sites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jumbotron">The Specimen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbar-2">My Other Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#collapse-paragraph">About the "Animal"</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    Its Creepy Pictures
+                </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#thumbnail-images">Part 1: The Normal Stuff</a>
+                        <a class="dropdown-item" href="#carousel">Part 2: The Slideshow</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <div class="col text-light" id="buttons">
+            <br> <br> <br>
             <ul class="breadcrumb bg-secondary">
                 <li class="breadcrumb-item">
-                    <a class="btn btn-primary" href="http://lotr.wikia.com/wiki/Nazg%C3%BBl" target="_blank">LOTR Wikia</a>
+                    <a class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="This is fan-made Wiki site all about the Lord of the Rings. There is quite a bit of info about the Nazgul (and more!) on it." href="http://lotr.wikia.com/wiki/Nazg%C3%BBl"
+                        target="_blank">
+                        LOTR Wikia
+                    </a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a class="btn btn-primary" href="http://shadowofwar.wikia.com/wiki/Nazg%C3%BBl" target="_blank">Shadow of War Wikia</a>
+                    <a class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="This is another fan-made Wiki about the Shadow of War and Shadow of Mordor video games relating to Lord of teh Rings." href="http://shadowofwar.wikia.com/wiki/Nazg%C3%BBl"
+                        target="_blank">
+                        Shadow of War Wikia
+                    </a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a class="btn btn-primary" href="https://screenrant.com/lord-of-the-rings-nazgul-facts-trivia/" target="_blank">Screen Rant</a>
+                    <a class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="This is a website whose people have devoted their lives to watching and talking about movies. The webpage that is linked is amazing facts about the Nazgul." href="https://screenrant.com/lord-of-the-rings-nazgul-facts-trivia/"
+                        target="_blank">
+                        Screen Rant
+                    </a>
                 </li>
             </ul>
         </div>
-        <div class="jumbotron bg-dark">
+        <div class="jumbotron bg-dark" id="jumbotron">
             <div class="fluid-container">
                 <h1 class="text-primary">Ringwraith</h1>
                 <h1 class="text-secondary">Nazgul</h1>
             </div>
         </div>
     </div>
-    <div>
+    <div id="navbar-2">
         <nav class="navbar navbar-expand-xl bg-secondary">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -81,22 +131,23 @@
             </ul>
         </nav>
     </div>
-    <br>
-    <div class="text-light">
+    <div class="text-light" id="collapse-paragraph">
+        <br> <br>
         <a href="#description" class="btn btn-primary" data-toggle="collapse">Short Description of the Nazgul</a>
         <div id="description" class="collapse">
             <div class="row">
                 <div class="col-xl-2"></div>
                 <div class="col">
-                    <br> These are the Nine Nazgul or ringwraiths who were originally the Nine Men the Nine Rings were bestowed upon. They are invisible to most creatures of Middle-Earth in the real world, but once the One Ring is put on your finger,
+                    <br> 
+                    These are the Nine Nazgul or ringwraiths who were originally the Nine Men the Nine Rings were bestowed upon. They are invisible to most creatures of Middle-Earth in the real world, but once the One Ring is put on your finger,
                     you become invisible too and can see the ringwraiths (amongst other creatures) in the invisble world as well.
                 </div>
                 <div class="col-xl-2"></div>
             </div>
         </div>
     </div>
-    <br>
-    <div class="row text-light font-fix">
+    <br> <br>
+    <div class="row text-light font-fix" id="thumbnail-images">
         <div class="col-xl-4 bg-success img-thumbnail">
             <img style="border-color: orange;" class="border-for-images" src="https://vignette.wikia.nocookie.net/lotr/images/f/ff/Nazgul.png/revision/latest?cb=20090112202924" a="Picture of a Hooded Ringwraith.">
             <hr>
@@ -114,6 +165,44 @@
             <hr>
             <p>This drawing of all Nine of the Nazgul with their swords down on the ground is most likely a fan art creation that shows how cool they all really are.</p>
         </div>
+    </div>
+    <br> <br>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="image-fix-2" src="https://static1.comicvine.com/uploads/original/11122/111221607/5294449-4153797336-black.jpg">
+            </div>
+            <div class="carousel-item">
+                <img class="image-fix-2" src="https://i.ytimg.com/vi/r4BHDAYssfE/maxresdefault.jpg">
+            </div>
+            <div class="carousel-item">
+                <img class="image-fix-2" src="https://img00.deviantart.net/ebb7/i/2008/235/9/4/nazgul_by_vbagi.jpg">
+            </div>
+            <div class="carousel-item">
+                <img class="image-fix-2" src="https://ideascdn.lego.com/community/migrated/715/60b/303851/image-thumbnail-full-58ZSzxfK97m7oQ">
+                <div class="carousel-caption">
+                    <p>
+                        Note:
+                        <br>
+                        Yes, I do realize that this is a LEGO Nazgul, but I admit that I like LEGOs.
+                        <br>
+                        I also couldn't find any other pictures that didn't become pixelated when I entered them into the carousel.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
 </body>
 
