@@ -1,0 +1,73 @@
+.bg-tangerine {
+    background-color: #E37222;
+}
+
+.bg-teal {
+    background-color: #07889B;
+}
+
+.bg-powder {
+    background-color: #66B9BF;
+}
+
+.bg-tan {
+    background-color: #EEAA7B;
+}
+
+.text-tangerine {
+    color: #E37222;
+}
+
+.text-teal {
+    color: #07889B;
+}
+
+.text-powder {
+    color: #66B9BF;
+}
+
+.text-tan {
+    color: #EEAA7B;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
