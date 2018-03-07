@@ -81,14 +81,14 @@
     width: 100%;
 }
 
-#fun-facts-list {
-    list-style: square;
-}
-
 body {
     font-family: 'Oxygen';
 }
 
 .carousel-paragraph {
+    font-size: 18px;
+}
+
+.info-paragraph {
     font-size: 18px;
 }
